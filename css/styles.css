@@ -102,6 +102,7 @@ body {
     
 }
 .menu-link {
+    position: relative;
     font-family: "Roboto", sans-serif;
         font-weight: 500;
         font-size: 16px;
@@ -109,6 +110,8 @@ body {
         letter-spacing: 0.02em;
         color: #2e2f42;
         padding: 24px 0
+        
+        
 }
 
 .menu-link:hover,
@@ -129,6 +132,24 @@ body {
 .menu-address-link:focus {
     color: #404bbf;
 }
+
+
+.studio-active::after {
+content: '';
+width: 48px;
+    height: 4px;
+    display: inline-block;
+    background-color: #404bbf;
+    border-radius: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 66px;
+    left: 0px;
+    
+
+}
+
 /* ========== /Page Header styles ========== */
 
 
@@ -157,7 +178,15 @@ body {
 }
 
 .hero-image {
-    background: #2e2f42;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+        ), 
+    url(../images/hero/bg_hero.jpg);
+    background-size: cover;
     padding-top: 188px;
     padding-bottom: 188px;
    
@@ -213,6 +242,9 @@ body {
         text-align: center;
         color: #fff;
 }
+
+
+
 .benefits {
     font-family: "Roboto", sans-serif;
         font-weight: 500;
@@ -230,6 +262,16 @@ body {
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #434455;
+}
+
+.icon-benefits {
+       border: 1px solid #8e8f99;
+        border-radius: 4px;
+        width: 264px;
+        height: 112px;
+        padding: 24px 100px;
+        display: block;
+        background: #f4f4fd;
 }
 /* ========== /Hero Section1 styles ========== */
 
@@ -301,6 +343,42 @@ body {
         text-align: center;
         color: #434455;        
 }
+
+.social-link {
+width: 40px;
+height: 40px;
+background-color: #404bbf;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.social-link:hover {
+    background-color: #31d0aa;
+}
+
+.instagram-icon {
+    fill:#f4f4fd;
+    
+        /* border-radius: 50%;
+        width: 40px;
+        height: 40px; */
+        /* padding: 12px; */
+        /* display: block; */
+        /* background-color:#404BBF ; */
+
+    
+}
+
+.social-item-links {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+}
 /* ========== /Hero Section2 styles ========== */
 
 /* ========== Hero Section3 styles ========== */
@@ -346,7 +424,14 @@ body {
 }
 
 .our-portfolio-item {
+    /* position: relative; */
     background-color: #ffffff;
+    overflow: hidden;
+}
+
+.our-portfolio-img-whith-overlay {
+    position: relative;
+    overflow: hidden;
 }
 .our-possibilities {
     font-family: "Roboto", sans-serif;
@@ -365,9 +450,37 @@ body {
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        color: #434455;
-        
+        color: #434455;        
         text-align: left;
+}
+
+.our-portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #4d5ae5;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        transform: translateY(100%);
+        transition: transform 250ms linear;
+        padding-top: 40px;
+        padding-left: 32px;
+        padding-right: 32px;
+}
+
+.our-portfolio-overlay-text {
+    font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #f4f4fd;
+        text-align: left;
+}
+
+.our-portfolio-item:hover .our-portfolio-overlay {
+    transform: translateY(0%);
 }
 /* ========== /Hero Section3 styles ========== */
 
@@ -415,5 +528,28 @@ body {
         color: #f4f4fd;
         max-width: 264px;
         
+}
+
+.social-media-text {
+    font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #fff;
+}
+
+.div-footer {
+    display: flex;
+    gap: 120px;
+}
+
+.social-item-links-footer {
+    display: flex;
+        justify-content: space-between;
+        /* padding-left: 16px;
+        padding-right: 16px; */
+        padding-top: 16px;
+        width: 208px;
 }
 /* ========== /Hero Footer styles ========== */
