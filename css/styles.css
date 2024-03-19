@@ -420,6 +420,8 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 /* ========== /Hero Section2 styles ========== */
 
 /* ========== Hero Section3 styles ========== */
+
+
 .our-portfolio-list {
     display: flex;
         flex-wrap: wrap;
@@ -447,6 +449,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         color: #2e2f42;
         padding-top: 120px;
         padding-bottom: 120px;
+
 }
 .our-portfolio {
     font-family: "Roboto", sans-serif;
@@ -465,6 +468,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     /* position: relative; */
     background-color: #ffffff;
     overflow: hidden;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-portfolio-img-whith-overlay {
@@ -519,6 +523,10 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .our-portfolio-item:hover .our-portfolio-overlay {
     transform: translateY(0%);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+        transform: translateY(0%);
 }
 /* ========== /Hero Section3 styles ========== */
 
