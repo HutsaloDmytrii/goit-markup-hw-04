@@ -532,6 +532,8 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 /* ========== Hero Footer styles ========== */
 .footer-container {
+    display: flex;
+    align-items: baseline;
 
 }
 
@@ -585,10 +587,10 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         color: #fff;
 }
 
-.div-footer {
+/* .div-footer {
     display: flex;
     gap: 120px;
-}
+} */
 
 .social-item-links-footer {
     display: flex;
