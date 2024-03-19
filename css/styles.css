@@ -76,6 +76,11 @@ body {
     gap: 40px;
 }
 
+.menu-item {
+    color: #404bbf;
+}
+
+
 .menu-address {
     display: flex;
     gap: 40px;
@@ -146,6 +151,7 @@ width: 48px;
     position: absolute;
     top: 66px;
     left: 0px;
+    color: #404bbf;
     
 
 }
